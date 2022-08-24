@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="calc app">
+    <listeners>
+        <listener class-name="com.calc.listeners.CalcTestListener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="android">
+        <parameter name="deviceName" value="0675837162103324"></parameter>
+        <parameter name="platformName" value="Android"></parameter>
+        <parameter name="platformVersion" value="11"></parameter>
+
+        <classes>
+            <class name="com.calc.testcases.CalcOperations"></class>
+        </classes>
+    </test>
+</suite>
